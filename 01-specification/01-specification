@@ -1,0 +1,49 @@
+# Pflichtenheft — 6-Achs-Roboterarm
+
+Dieses Dokument legt die Zielwerte des Projekts in Zahlen fest. Alle späteren
+Entscheidungen (Motoren, Getriebe, Materialstärke, Bauraum) messen sich daran.
+
+Stand: erste Festlegung. Werte können in der mechanischen Auslegung (Phase 2)
+zurückgespielt und iteriert werden.
+
+## Kernspezifikation
+
+| Parameter | Zielwert | Begründung |
+|---|---|---|
+| Traglast am Greifer | 0,5 kg | inkl. Greifergewicht; vergleichbar mit AR4-Klasse, fordert die Drehmomentrechnung ohne die Mechanik zu sprengen |
+| Reichweite | ~500 mm | von Basis bis Greiferspitze, voll ausgestreckt; sinnvoller Tisch-Arbeitsbereich, mechanisch beherrschbar |
+| Achsen / Freiheitsgrade | 6 | volle Positions- und Orientierungsfreiheit; kompletter Kinematik-Lerneffekt |
+| Wiederholgenauigkeit (Ziel) | ±1 mm | konservativ-realistisch für 3D-Druck-DIY; abhängig von Getriebespiel und Steifigkeit |
+
+## Abgeleitete / noch festzulegende Größen
+
+Diese ergeben sich aus der mechanischen Auslegung und werden in Phase 2 ergänzt:
+
+| Parameter | Status |
+|---|---|
+| Massenbudget je Armglied | offen — Schätzung in Phase 2 |
+| Drehmomentbedarf je Gelenk (J1–J6) | offen — Berechnung in Phase 2 |
+| Motortyp & Größe je Achse | offen — z.B. NEMA 17/23 |
+| Getriebetyp & Untersetzung je Achse | offen — Riemen / Planeten / Cycloidal |
+| Geschwindigkeit / Zykluszeit | offen — nachrangig, da Lern- statt Produktivprojekt |
+| Gesamtgewicht des Arms | offen — ergibt sich aus CAD |
+
+## Arbeitsraum
+
+Der theoretische Arbeitsraum ist eine Halbkugel mit ~500 mm Radius um die Basis
+(eingeschränkt durch Gelenkwinkelgrenzen und Selbstkollision). Eine genaue
+Arbeitsraum-Skizze folgt nach der CAD-Modellierung.
+
+_Hier später eine Skizze oder ein Rendering des erreichbaren Volumens einfügen._
+
+## Nicht-Ziele (bewusst ausgeklammert)
+
+- Hohe Geschwindigkeit / industrielle Zykluszeiten
+- Maximale Genauigkeit (kein Metallbau, keine spielfreien Industriegetriebe)
+- Niedrigste Kosten (Lerneffekt geht vor Sparen)
+- Einfachste Umsetzung (bewusst der anspruchsvollere Weg mit Steppern + Getrieben)
+
+## Referenz
+
+AR4 von Annin Robotics — dient ausschließlich als Vergleichs- und Referenzdesign,
+nicht als Bauvorlage.
