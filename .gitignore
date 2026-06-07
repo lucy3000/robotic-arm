@@ -1,0 +1,47 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ── ROS 2 ───────────────────────────────────────────────
+build/
+install/
+log/
+
+# ── Fusion 360 ──────────────────────────────────────────
+# Backup- und temporäre Dateien (die Quelldateien .f3d/.f3z gehören per LFS ins Repo)
+*.f3d.bak
+*.bak
+*~
+
+# ── 3D-Druck / Slicer ───────────────────────────────────
+*.gcode
+*.gco
+
+# ── Editor / IDE ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Betriebssystem ──────────────────────────────────────
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+# Linux
+*~
+
+# ── OneDrive ────────────────────────────────────────────
+# OneDrive legt manchmal versteckte Sync-Dateien an
+*.tmp
+~$*
